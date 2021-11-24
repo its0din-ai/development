@@ -22,4 +22,4 @@ class Calculator:
 a=55
 b=3
 calc = Calculator(a)
-print(calc.sum(b))
+print(calc.power(b))
