@@ -1,4 +1,4 @@
-# Praktikum Modul 7 Point B
+# Praktikum Modul 7 Bonus
 # Oleh, Muhammad Wahyu Syafi'uddin
 # NIM : L200210056
 
