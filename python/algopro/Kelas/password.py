@@ -1,14 +1,18 @@
-db_pass = "admin123"
+import hashlib
 
-pass_input = str(input("Masukkan password: "))
+db_pass = "7b24afc8bc80e548d66c4e7ff72171c5" # toor
+pass_input = str(input("Masukkan Password: "))
+crypt = hashlib.md5(pass_input.encode())
+crypted = crypt.hexdigest()
 to = 2
+
 while to > 0:
-    if pass_input == db_pass:
-        print("Password benar")
+    if crypted == db_pass:
+        print("Password Benar")
         break
     else:
-        print("Password salah")
+        print("Password Salah")
         to -= 1
-        pass_input = str(input("Masukkan password: "))
+        pass_input = str(input("Masukkan Password: "))
         if to == 0:
-            print("Anda telah mencoba 3x, akun anda di blokir")
+            print("Anda telah mencoba 3x, Akses anda dibatasi!")
