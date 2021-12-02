@@ -1,29 +1,20 @@
-// Testing Gitmoji
-let $name = "encrypt0r";
-var _email = "encrypt0r@google.com";
-const Fav = "Golang";
-const fav = "R Script"
-let db = [
-        {nama: "elon", namaBelakang: "musk", email: "elon@space.x"},
-        {nama: "mark", namaBelakang: "zuckerberg", email: "mark@meta.com"},
-        {nama: "bill", namaBelakang: "gates", email: "gates@microsoft.com"},
-        {nama: "james", namaBelakang: "bond", email: "bond007@cia.org"}
-]
-let z = 666
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
 
-{
-    let x = 55
-    let y = 20
-    let z = x + y
-    var xyz = "LOL"
-    console.log(z)
-}
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+    const data = [
+        {username: "admin", password: "admin"}
+    ]
+    
 
-console.log(z)
-console.log($name);
-console.error(_email);
-console.warn(Fav);
-console.info(fav);
-console.log(xyz)
-
-console.table(db);
+    if (username ===  data[0].username && password === data[0].password){
+        alert("You have successfully logged in.");
+        location.reload();
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})
