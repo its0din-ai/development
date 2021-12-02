@@ -1,4 +1,4 @@
-# Praktikum Modul 7 Bonus
+# Praktikum Kegiatan 1
 # Oleh, Muhammad Wahyu Syafi'uddin
 # NIM : L200210056
 
@@ -44,7 +44,7 @@ def tampilkanEmail():
 
 # Output
 print("+------------------------------+")
-print("""| Untuk Menampilkan Informasi |
+print("""| Untuk Menampilkan Informasi  |
 | Harap Masukkan Kode Angkanya |""")
 print("+------------------------------+")
 print("Pilihan yang tersedia :")
