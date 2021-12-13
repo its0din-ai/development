@@ -16,3 +16,4 @@ def konversiSuhu(default=0, C="A", F="a"):
         x = 0
         kalkulasi = x * 9/5 + 32
         print("Suhu {} Celcius Setara dengan {} Fahrenheit".format(x, kalkulasi))
+
