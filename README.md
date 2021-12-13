@@ -1,4 +1,4 @@
 # Created for Backing Up My $HOME/devs/ folder
 
-### Create Changelog
-#### Testing Gitmoji
+### Resource Kuliah
+#### Semester 1 :white_check_mark:
