@@ -1,12 +1,13 @@
 import socket
 
+host = 'localhost'
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(("", 666))
-s.listen(5)
-print("Koneksi [200] OK")
+s.bind((host, 666))
+s.listen()
+print("Server Dimulai!")
 dataInput = ""
 dataBase = {
-    "nama" : "ODIN Ryuji",
+    "nama" : "MUHAMMAD WAHYU SYAFI'UDDIN'",
     "nim" : "L200210056",
     "angkatan" : "2021",
     "keluar" : "Siap!"
@@ -15,13 +16,17 @@ dataBase = {
 while dataInput.lower() != "keluar":
     koneksi, addr = s.accept()
     while dataInput.lower() != "keluar":
-        dataInput = koneksi.recv(1024)
+        dataInput = koneksi.recv(1024).decode()
         if dataInput.lower() == "keluar":
+            data = dataBase["keluar"]
+            koneksi.send(data.encode())
             s.close()
             break
-        print("Beri aku Perintah: ", dataInput)
-        if dataBase.has_key(dataInput):
-            koneksi.send(dataBase[dataInput])
+        print("Beri aku Perintah: ", dataInput.lower())
+        if dataInput.lower() in dataBase:
+            data = dataBase[dataInput.lower()]
+            koneksi.send(data.encode())
         else:
-            koneksi.send("Perintah tidak dimengerti, tuan!")
+            txt = "Perintah tidak dimengerti, tuan!"
+            koneksi.send(txt.encode())
         
