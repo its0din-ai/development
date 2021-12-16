@@ -7,7 +7,7 @@ s.listen()
 print("Server Dimulai!")
 dataInput = ""
 dataBase = {
-    "nama" : "MUHAMMAD WAHYU SYAFI'UDDIN'",
+    "nama" : "MUHAMMAD WAHYU SYAFI'UDDIN",
     "nim" : "L200210056",
     "angkatan" : "2021",
     "keluar" : "Siap!"
