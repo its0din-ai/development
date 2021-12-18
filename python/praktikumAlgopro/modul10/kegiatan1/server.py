@@ -1,9 +1,11 @@
 import socket
 
 host = 'localhost'
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((host, 666))
-s.listen()
+port = 666
+
+soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+soc.bind((host, port))
+soc.listen()
 print("Server Dimulai!")
 dataInput = ""
 dataBase = {
@@ -14,13 +16,13 @@ dataBase = {
 }
 
 while dataInput.lower() != "keluar":
-    koneksi, addr = s.accept()
+    koneksi, addr = soc.accept()
     while dataInput.lower() != "keluar":
         dataInput = koneksi.recv(1024).decode()
         if dataInput.lower() == "keluar":
             data = dataBase["keluar"]
             koneksi.send(data.encode())
-            s.close()
+            soc.close()
             break
         print("Beri aku Perintah: ", dataInput.lower())
         if dataInput.lower() in dataBase:

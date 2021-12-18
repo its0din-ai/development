@@ -1,19 +1,19 @@
 import socket
-
 host = 'localhost'
+port = 666
 inputPerintah = ""
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((host, 666))
+soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+soc.connect((host, port))
 print("Program Komunikasi tentang Server")
 while inputPerintah.lower() != "quit":
     inputPerintah = str(input("Apa Perintahnya => "))
-    s.send(inputPerintah.encode())
+    soc.send(inputPerintah.encode())
     if inputPerintah.lower() == "quit":
-        respon = s.recv(1024).decode()
+        respon = soc.recv(1024).decode()
         print("Jawab: ",respon)
-        s.close()
+        soc.close()
         break
     elif inputPerintah.lower() != "quit":
-        respon = s.recv(1024).decode()
+        respon = soc.recv(1024).decode()
         print("Jawab: ",respon)
-s.close()
+soc.close()

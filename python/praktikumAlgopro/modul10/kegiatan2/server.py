@@ -1,18 +1,19 @@
 import socket, platform
 
 host = 'localhost'
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((host, 666))
-s.listen()
+port = 666
+soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+soc.bind((host, port))
+soc.listen()
 print("Server Dimulai!")
 dataInput = ""
 
 while dataInput.lower() != "quit":
-    koneksi, addr = s.accept()
+    koneksi, addr = soc.accept()
     while dataInput.lower() != "quit":
         dataInput = koneksi.recv(1024).decode()
         if dataInput.lower() == "quit":
-            s.close()
+            soc.close()
             break
         print("Beri aku Perintah: ", dataInput.lower())
         if dataInput.lower() == "machine":

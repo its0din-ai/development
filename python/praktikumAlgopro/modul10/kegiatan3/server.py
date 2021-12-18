@@ -1,7 +1,7 @@
 import socket
 
+# Luas Jajar Genjang, NIM Akhir = 6
 def hitungLuas(alas, tinggi):
-    # Luas Jajar Genjang
     luas = alas * tinggi
     return luas
 
