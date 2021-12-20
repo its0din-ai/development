@@ -20,9 +20,11 @@ def main():
     print(f"tinggi => {tinggi}")
     return hitung(alas, tinggi)
 
-while True:
-    print("[Waiting for Connection]")
-    conn, addr = soc.accept()
-    print(f"[Incoming Connection from {addr}] Server Dimulai!")
-    main()
-    soc.close()
+
+print("[Waiting for Connection]")
+conn, addr = soc.accept()
+print(f"[Incoming Connection from {addr}] Server Dimulai!")
+main()
+print("Tugas Selesai!")
+print("Server Ditutup!")
+soc.close()
