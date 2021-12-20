@@ -1,4 +1,4 @@
-import socket, os, sys
+import socket
 
 host = 'localhost'
 port = 666
