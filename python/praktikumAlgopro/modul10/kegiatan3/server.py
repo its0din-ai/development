@@ -25,3 +25,4 @@ while True:
     conn, addr = soc.accept()
     print(f"[Incoming Connection from {addr}] Server Dimulai!")
     main()
+    soc.close()
