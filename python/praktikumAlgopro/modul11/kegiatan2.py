@@ -17,6 +17,7 @@ angka2 = StringVar()
 entryAngka2 = Entry(gui2, textvariable=angka2)
 entryAngka2.grid(padx=(10, 10), sticky = "W", row=1, column=1, ipady=15)
 
-# BELUM SELESAI !
+# BELUM SELESAI !!
+# Lanjutin nanti
 
 gui2.mainloop()
