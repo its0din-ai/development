@@ -8,11 +8,11 @@ desk = Label(gui3, text="""Jajar genjang atau jajaran genjang adalah bangun data
 dua pasang rusuk yang masing-masing sama panjang dan sejajar dengan pasangannya,
 dan memiliki dua pasang sudut yang masing-masing sama besar dengan sudut di hadapannya.""", font=("Poppins", 10, "bold"), justify="left").place(x=20, y=60)
 
-teksPar1 = Label(gui3, text="Panjang sisi 1").place(x=20, y=120)
+teksPar1 = Label(gui3, text="Panjang Alas: ").place(x=20, y=120)
 alas = StringVar()
 entPar1 = Entry(gui3, textvariable=alas).place(x=130, y=120)
 
-teksPar2 = Label(gui3, text="Panjang sisi 1").place(x=20, y=150)
+teksPar2 = Label(gui3, text="Panjang Tinggi: ").place(x=20, y=150)
 tinggi = StringVar()
 entPar2 = Entry(gui3, textvariable=tinggi).place(x=130, y=150)
 
