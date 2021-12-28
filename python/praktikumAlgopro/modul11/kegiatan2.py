@@ -55,3 +55,5 @@ divs = Button(gui2, text=":", command=bagi)
 divs.grid(row=3, column=2, sticky="W", padx=(0, 0), pady=80, ipadx=15, ipady=15)
 
 gui2.mainloop()
+
+# DONE

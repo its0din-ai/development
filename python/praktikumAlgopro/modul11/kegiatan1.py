@@ -37,3 +37,5 @@ tombolTutup = Button(gui1, text="TUTUP", command=tutup)
 tombolTutup.grid(sticky = "e", row=10, column=2)
 
 gui1.mainloop()
+
+# DONE

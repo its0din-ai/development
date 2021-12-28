@@ -27,3 +27,5 @@ b2 = Button(myApp, text="Hapus", command=hapus)
 b2.grid(row=2, column=0)
 
 myApp.mainloop()
+
+# UNDERSTOOD

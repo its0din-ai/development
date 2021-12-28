@@ -25,3 +25,5 @@ def luas():
 butLuas = Button(gui3, text="Hitung", command=luas).place(x=20, y=200)
 
 gui3.mainloop()
+
+# DONE
