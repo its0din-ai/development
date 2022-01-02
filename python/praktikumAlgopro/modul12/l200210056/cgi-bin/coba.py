@@ -15,7 +15,7 @@ markup = f"""
 <div class="card mb-3" style="max-width: 1080px; background-color: #d8e2dc;">
 <div class="row g-0">
 <div class="col-md-4 pt-2 pb-2 ps-2">
-<img src="https://kerma.widyatama.ac.id/wp-content/uploads/2021/05/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start rounded-end" alt="odin-img">
+<img src="https://raw.githubusercontent.com/its0din-ai/development/master/python/praktikumAlgopro/modul12/l200210056/img/gmbr.png" class="img-fluid rounded-start rounded-end" alt="odin-img">
 </div>
 <div class="col-md-8">
 <div class="card-body">
