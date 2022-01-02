@@ -8,7 +8,7 @@ markup = f"""
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<title>Tugas Praktikum Algoritma</title>
+<title>Kegiatan 2</title>
 </head>
 <body style="font-family: 'Open Sans', sans-serif !important; font-weight: 700; background-color: #e8e8e4">
 <div class="container container-fluid ms-5 mt-5">
