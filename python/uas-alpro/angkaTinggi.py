@@ -1,10 +1,10 @@
-def tinggi(tanyaTinggi):
-    hapusDelim = tanyaTinggi.split(',')
-    for i in range(0, len(hapusDelim)):
-        hapusDelim[i] = int(hapusDelim[i])
+def tinggi(angka):
+    listAngka = angka.split(',')
+    for i in range(0, len(listAngka)):
+        listAngka[i] = int(listAngka[i])
     
-    maksimum = max(hapusDelim)
-    print(maksimum)
+    mx = max(listAngka)
+    print(mx)
 
 """
 fungsi mengambil argumen dari parameter
